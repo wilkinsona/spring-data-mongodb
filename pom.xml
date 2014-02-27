@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<groupId>org.springframework.data</groupId>
 	<artifactId>spring-data-mongodb-parent</artifactId>
-	<version>1.5.0.BUILD-SNAPSHOT</version>
+	<version>1.5.0.DEPENDENCIES</version>
 	<packaging>pom</packaging>
 
 	<name>Spring Data MongoDB</name>
@@ -15,7 +15,7 @@
 	<parent>
 		<groupId>org.springframework.data.build</groupId>
 		<artifactId>spring-data-parent</artifactId>
-		<version>1.4.0.BUILD-SNAPSHOT</version>
+		<version>1.4.0.DEPENDENCIES</version>
 		<relativePath>../spring-data-build/parent/pom.xml</relativePath>
 	</parent>
 
@@ -29,11 +29,13 @@
 	<properties>
 		<project.type>multi</project.type>
 		<dist.id>spring-data-mongodb</dist.id>
-		<springdata.commons>1.8.0.BUILD-SNAPSHOT</springdata.commons>
+		<hibernate-validator>4.3.1.Final</hibernate-validator>
+		<springdata.commons>1.8.0.DEPENDENCIES</springdata.commons>
 		<mongo>2.11.4</mongo>
 		<mongo-osgi>${mongo}</mongo-osgi>
+		<validation>1.0.0.GA</validation>
 	</properties>
-	
+
 	<developers>
 		<developer>
 			<id>ogierke</id>
@@ -121,14 +123,14 @@
 			<version>${mongo}</version>
 		</dependency>
 	</dependencies>
-	
+
 	<repositories>
 		<repository>
 			<id>spring-libs-snapshot</id>
 			<url>http://repo.spring.io/libs-snapshot/</url>
 		</repository>
 	</repositories>
-	
+
 	<pluginRepositories>
 		<pluginRepository>
 			<id>spring-plugins-release</id>
